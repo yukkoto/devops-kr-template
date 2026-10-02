@@ -1,5 +1,5 @@
 def validate_phone(phone: str) -> bool:
-    """Валидация расийского номера."""
+    """Валидация росийского номера."""
     import re
     pattern = r'^\+?7\d{10}$'
     return bool(re.match(pattern, phone.replace('-', '').replace(' ', '')))
